@@ -7,7 +7,7 @@ public class Internship implements KnowledgeSource {
         return 0;
     }
     @Override
-    public int onTeach(String knowledgeSource, Student student){
-        return 0;
+    public void educate(Student student){
+
     }
 }

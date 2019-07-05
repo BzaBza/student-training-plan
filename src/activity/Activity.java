@@ -9,8 +9,8 @@ public class Activity {
     private Schedule schedule;
     private KnowledgeSource knowledgeSource;
 
-    public Activity(String knowledgeSource, LocalDate localDate, Student student){
-         schedule.isActive(localDate);
-         knowledgeSource.onTeach(knowledgeSource, student);
+    public void tryToApply(Student student, LocalDate localDate ){
+        schedule.isActive(localDate);
+        knowledgeSource.educate(student);
     }
 }

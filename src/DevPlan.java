@@ -1,12 +1,23 @@
 import activity.Activity;
 
-import java.util.List;
+import java.time.LocalDate;
+import java.util.ArrayList;
 
 public class DevPlan {
-    public DevPlan(){
+    private LocalDate date;
+    private Activity activity = new Activity();
+    private ArrayList<Student> students;
 
+    public DevPlan(ArrayList<Student> students, LocalDate date) {
+        this.students = students;
+        this.date = date;
+        perform();
     }
-    public getKnowledgeSources(){
 
+    private void perform(){
+            for (Student student : students) {
+                activity.tryToApply(student, date);
+            }
+        }
     }
 }

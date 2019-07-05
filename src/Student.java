@@ -1,18 +1,24 @@
 public class Student {
     private int knowledge;
     private int practice;
+    private String name;
     private boolean isHasLaptop;
 
-    public Student(){
-
+    public Student(boolean isHasLaptop, String name) {
+        this.isHasLaptop = isHasLaptop;
+        this.name = name;
     }
-    public getKnowledge(int knowledge){
+
+    public void getKnowledge(int knowledge) {
         this.knowledge = knowledge;
     }
-    public getPractice(int practice){
+
+    public void getPractice(int practice) {
         this.practice = practice;
     }
-//    public teach(){
-//        return;
-//    }
+
+    public String getName() {
+        return name;
+    }
+
 }

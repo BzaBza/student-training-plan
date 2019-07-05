@@ -8,7 +8,8 @@ public class SelfEducation implements KnowledgeSource {
     }
 
     @Override
-    public int onTeach(String knowledgeSource, Student student){
-        return 0;
+    public void educate(Student student){
+
+
     }
 }
